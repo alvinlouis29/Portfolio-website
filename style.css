@@ -1,7 +1,7 @@
 html {
   box-sizing: border-box;
 }
-  
+
 * {
   box-sizing: inherit;
   margin: 0;
@@ -57,7 +57,7 @@ a {
   text-decoration: none;
   color: black;
 }
-  
+
 /* --------- hero section ------- */
 
 .hero {
@@ -124,9 +124,9 @@ a {
 }
 
 .social li a {
-    padding: 0 10px;
-    color: #172b4d;
-    font-size: 20px;
+  padding: 0 10px;
+  color: #172b4d;
+  font-size: 20px;
 }
 
 @media all and (max-width: 500px) {
