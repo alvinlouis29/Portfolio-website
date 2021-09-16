@@ -79,3 +79,17 @@ a {
   font-size: 15px;
   color: #172b4d;
 }
+
+/* -------- social ------- */
+
+.social {
+  display: flex;
+  justify-content: center;
+}
+
+.social ul {
+  display: flex;
+  justify-content: center;
+  width: fit-content;
+  letter-spacing: 5px;
+}
