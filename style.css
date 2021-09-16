@@ -35,6 +35,29 @@ a {
   display: none;
 }
 
+/* --------- navigation menu ------- */
+
+.nav-menu {
+  display: flex;
+  justify-content: center;
+}
+
+.nav-menu ul {
+  display: flex;
+  width: fit-content;
+  margin: 20px 0;
+  position: fixed;
+}
+
+.nav-menu li {
+  padding: 0 20px;
+}
+
+.nav-menu a {
+  text-decoration: none;
+  color: black;
+}
+  
 /* --------- hero section ------- */
 
 .hero {
