@@ -100,6 +100,12 @@ a {
   letter-spacing: 5px;
 }
 
+.social li a {
+    padding: 0 10px;
+    color: #172b4d;
+    font-size: 20px;
+}
+
 @media all and (max-width: 500px) {
   .nav-menu {
     display: none;
@@ -144,7 +150,7 @@ a {
   }
 
   .bar {
-    width: 20px;
+    width: 15px;
     background-color: rgb(32, 14, 14);
     margin: 1px 0;
   }
