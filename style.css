@@ -222,6 +222,109 @@ h1 {
   line-height: 16px;
 }
 
+/* ------- About Myself ------ */
+
+.about {
+  background-image: url(./images/about.png);
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  padding: 20px 200px;
+}
+
+.about h1 {
+  font-size: 40px;
+}
+
+.about p {
+  text-align: center;
+  padding: 40px 80px;
+  font-size: 20px;
+  color: #172b4d;
+}
+
+.resume {
+  justify-content: center;
+  display: flex;
+}
+
+.resume a {
+  background-color: #36b37f;
+  border-radius: 2px;
+  color: white;
+  padding: 12px;
+  margin: 5px 4px;
+  font-size: 17px;
+}
+
+.content li a {
+  background-color: #ebf0ee;
+  border-radius: 2px;
+  padding: 12px 8px;
+  margin: 0 4px;
+  color:#3A4A42;
+  font-size: 12px;
+  line-height: 16px;
+}
+
+.social li a {
+  padding: 0 10px;
+  color: #172b4d;
+  font-size: 20px;
+}
+
+.skill {
+  display: grid;
+  grid-template-columns: repeat(3, 327px);
+  grid-template-rows: 352px;
+  justify-content: center;
+  grid-column-gap: 20px;
+  padding: 50px;
+}
+
+.weight {
+  background-color: #ebf0ee;
+  border: 1px #a0a0a0 solid;
+  border-radius: 10px;
+}
+
+.featured {
+  display: grid;
+  justify-content: center;
+  padding: 180px 80px 0 80px;
+}
+
+.weight h1 {
+  color: #344563;
+  font-size: 24px;
+  line-height: 34px;
+  padding: 10px;
+}
+
+.cores {
+  padding: 0;
+}
+
+.weight ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 10px;
+}
+
+.weight li {
+  margin: 12px 0;
+}
+
+.weight li a {
+  background-color: #fff;
+  border-radius: 2px;
+  padding: 10px;
+  margin: 10px 4px;
+  color: #36b37e;
+  font-size: 12px;
+  font-weight: 600;
+}
 
 @media all and (max-width: 500px) {
   .nav-menu {
