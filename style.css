@@ -294,6 +294,27 @@ h1 {
   padding: 180px 80px 0 80px;
 }
 
+.language {
+  background-image: url(./images/lang.png);
+  background-size: 120px;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.frame-works {
+  background-image: url(./images/frameworks.png);
+  background-size: 120px;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.skills {
+  background-image: url(./images/skills.png);
+  background-size: 120px;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
 .weight h1 {
   color: #344563;
   font-size: 24px;
