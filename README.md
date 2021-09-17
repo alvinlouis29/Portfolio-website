@@ -26,9 +26,9 @@ The main objectives for this project are:
 
 👤 **Alvin Louis**
 
-- GitHub: [@githubhandle](https://github.com/alvinlouis29)
-- Twitter: [@twitterhandle](https://twitter.com/louisssegawa)
-- LinkedIn: [LinkedIn](https://www.linkedin.com/in/alvin-louis-632026183/)
+- GitHub: [@alvinlouis29](https://github.com/alvinlouis29)
+- Twitter: [@louisssegawa](https://twitter.com/louisssegawa)
+- LinkedIn: [Alvin Louis](https://www.linkedin.com/in/alvin-louis-632026183/)
 
 ## 🤝 Contributing
 
