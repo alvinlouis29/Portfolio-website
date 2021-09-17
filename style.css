@@ -469,4 +469,26 @@ h1 {
   .content {
     padding: 20px 0;
   }
+  
+  /* --------- About ------- */
+
+  .about {
+    padding: 20px 15px;
+    background-image: url(./images/about-mobile.png);
+    background-position: top;
+    background-size: contain;
+  }
+
+  .about p {
+    padding: 30px 10px;
+  }
+
+  .skill {
+    display: grid;
+    grid-template-columns: 300px;
+    grid-template-rows: repeat(3, 352px);
+    justify-content: center;
+    grid-row-gap: 20px;
+    padding: 50px;
+  }
 }
