@@ -31,7 +31,7 @@ a {
 }
 
 .hidden {
-    visibility: hidden;
+  visibility: hidden;
 }
 
 /* -------- Header -------- */
@@ -111,13 +111,13 @@ a {
 }
 
 .support p {
-  font-family: Inter;
+  font-family: 'Inter', sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 20px;
   line-height: 28px;
   color: #172b4d;
-  margin: 58px 0px;
+  margin: 58px 0;
 }
 
 /* -------- social ------- */
@@ -166,7 +166,7 @@ a {
     font-weight: 600;
     font-size: 20px;
     line-height: 28px;
-    color: #28352F;
+    color: #28352f;
   }
 
   .menu-button {
@@ -190,12 +190,12 @@ a {
 
   .bar {
     background-color: rgb(32, 14, 14);
-    height: 0px;
+    height: 0;
     width: 16px;
     left: 4px;
     top: 17px;
     border-radius: 5px;
-    border: 2px solid #ffffff;
+    border: 2px solid #fff;
   }
 
   /* ------- hero - section  ------ */
@@ -207,8 +207,8 @@ a {
   }
 
   .primary h1 {
-    margin: 0; 
-    font-family: Inter;
+    margin: 0;
+    font-family: 'Inter';
     font-style: normal;
     font-weight: bold;
     font-size: 40px;
