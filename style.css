@@ -141,6 +141,24 @@ h1 {
   letter-spacing: 5px;
 }
 
+.open a {
+  background-color: #36b37f;
+  border-radius: 2px;
+  color: white;
+  padding: 12px;
+  margin: 5px 4px;
+  font-size: 17px;
+}
+
+.resume a {
+  background-color: #36b37f;
+  border-radius: 2px;
+  color: white;
+  padding: 12px;
+  margin: 5px 4px;
+  font-size: 17px;
+}
+
 .social li a {
   padding: 0 10px;
   color: #172b4d;
@@ -202,15 +220,6 @@ h1 {
   padding: 5px;
 }
 
-.open a {
-  background-color: #36b37f;
-  border-radius: 2px;
-  color: white;
-  padding: 12px;
-  margin: 5px 4px;
-  font-size: 17px;
-}
-
 .content li a {
   background-color: #ebf0ee;
   border-radius: 2px;
@@ -245,21 +254,6 @@ h1 {
 .resume {
   justify-content: center;
   display: flex;
-}
-
-.resume a {
-  background-color: #36b37f;
-  border-radius: 2px;
-  color: white;
-  padding: 12px;
-  margin: 5px 4px;
-  font-size: 17px;
-}
-
-.social li a {
-  padding: 0 10px;
-  color: #172b4d;
-  font-size: 20px;
 }
 
 .skill {
@@ -422,7 +416,7 @@ h1 {
   .social ul {
     padding: 0;
   }
-  
+
   /* ----- Recent Section ----- */
 
   .recent_works {
@@ -433,14 +427,13 @@ h1 {
     display: flex;
     align-items: center;
     text-align: center;
-    font-family: Inter;
+    font-family: 'Inter', sans-serif;
     font-style: normal;
     font-weight: 700;
     font-size: 40px;
     line-height: 52px;
     color: #172b4d;
     padding: 0 26px;
-
   }
 
   .cards {
@@ -458,7 +451,7 @@ h1 {
   .content {
     padding: 20px 0;
   }
-  
+
   /* --------- About ------- */
 
   .about {
