@@ -30,6 +30,10 @@ a {
   flex-direction: column;
 }
 
+.hidden {
+    visibility: hidden;
+}
+
 /* -------- Header -------- */
 
 .menu {
@@ -95,7 +99,7 @@ a {
   font-weight: bold;
 }
 
-.primary header {
+.primary span {
   color: #36b37f;
 }
 
