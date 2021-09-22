@@ -359,7 +359,6 @@ h1 {
 .info {
   width: 463px;
   display: flex;
-  flex-direction: column;
   align-items: center;
 }
 
@@ -379,18 +378,41 @@ h1 {
 }
 
 form {
-  display: grid;
+  display: flex;
   flex-direction: column;
   margin-left: 24px;
 }
 
-#mobile {
-  display: none;
+form ul {
+  align-content: flex-start;
 }
 
-label {
-  position: absolute;
-  padding: 10px;
+.names {
+  display: flex;
+  gap: 24px;
+}
+
+.names ul {
+  width: 100%;
+}
+
+.names ul li {
+  padding: 0;
+  margin: 0;
+}
+
+.inner_one {
+  width: 100%;
+  margin: 0;
+}
+
+.inner_two {
+  width: 100%;
+  margin: 0;
+}
+
+#mobile {
+  display: none;
 }
 
 input {
@@ -406,23 +428,37 @@ textarea {
 }
 
 #name {
-  width: 40%;
+  padding: 15px 16px;
+  width: 100%;
   height: 48px;
+  margin: 0;
+  color: #6B778C;
 }
 
 #last_name {
-  width: 40%;
+  padding: 15px 16px;
+  width: 100%;
   height: 48px;
+  margin: 0;
+  color: #6B778C;
 }
 
 #mail {
+  padding: 15px 16px;
   height: 48px;
-  width: 100%;
+  width: 100%;color: #6B778C;
 }
 
 #msg {
+  font-family: 'Inter' ,sans-serif;
+  font-weight: normal;
+  font-style: normal;
+  font-size: 15px;
+  line-height: 24px;
   height: 114px;
   width: 100%;
+  color: #091E42;
+  padding: 15px 16px;
 }
 
 #touch {
@@ -453,7 +489,7 @@ footer {
   letter-spacing: 5px;
 }
 
-.social_footer li a {
+.social_footer ul li a {
   padding: 0 10px;
   color: #505f79;
   font-size: 20px;
@@ -614,7 +650,7 @@ footer {
   }
 
   .contact_us {
-    padding: 20px 24px;
+    padding: 0;
   }
 
   .contact-wrapper {
@@ -630,11 +666,7 @@ footer {
   .info {
     width: 100%;
     text-align: center;
-  }
-
-  label {
-    position: absolute;
-    padding: 10px;
+    padding: 20px 24px;
   }
 
   #desktop {
@@ -662,6 +694,12 @@ footer {
   }
 
   #message {
+    font-family: 'Inter' ,sans-serif;
+    font-weight: normal;
+    font-style: normal;
+    font-size: 15px;
+    line-height: 24px;
+    padding: 12px;
     height: 114px;
     width: 100%;
   }
@@ -672,6 +710,8 @@ footer {
   }
 
   #get_in_touch {
+    background-color: #36b37f;
+    color: white;
     font-size: 17px;
     line-height: 24px;
     display: flex;
@@ -681,6 +721,9 @@ footer {
   }
 
   .email {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
     font-weight: normal;
     font-size: 20px;
     line-height: 32px;

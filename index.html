@@ -201,42 +201,39 @@
                        so if you'd like to chat please get in touch.</p>
                 </div>
                 <div class="message">
-                    <form action="/contact" method="POST" id="desktop">
+                    <form action="https://formspree.io/f/xzbyoodn" method="POST" id="desktop">
                         <ul> 
-                              <li>
-                                <label for="name">First Name</label>
-                                <input type="text" id="name" name="first_name">
+                            <li>
+                                    <ul class="names">
+                                        <li class="inner_one">
+                                            <input type="text" id="name" name="first_name" maxlength="30" placeholder="First Name" required>
+                                        </li>
+                                        <li class="inner_two">
+                                            <input type="text" id="last_name" name="last_name" maxlength="30" placeholder="Last Name" required>
+                                        </li>
+                                    </ul>
+                            </li>
+                            <li>
+                                <input type="email" id="mail" name="user_email" maxlength="30" placeholder="Email" required>
                               </li>
                               <li>
-                                <label for="name">Last Name</label>
-                                <input type="text" id="last_name" name="last_name">
-                              </li>
-                              <li>
-                                <label for="mail">E-mail</label>
-                                <input type="email" id="mail" name="user_email">
-                              </li>
-                              <li>
-                                <label for="msg">Message</label>
-                                <textarea id="msg" name="user_message"></textarea>
+                                <textarea id="msg" name="user_message"  maxlength="500" placeholder="Typing Something"></textarea>
                               </li>
                               <li>
                                 <button type="submit" id="touch">Get in touch</button>
                               </li>
                         </ul>
                       </form>
-                    <form action="/contact" method="POST" id="mobile">
+                    <form action="https://formspree.io/f/xzbyoodn" method="POST" id="mobile">
                         <ul> 
                               <li>
-                                <label for="name">Full Name</label>
-                                <input type="text" id="full_name" name="full_name">
+                                <input type="text" id="full_name" name="full_name" maxlength="30" placeholder="Full name" required>
                               </li>
                               <li>
-                                <label for="email">E-mail</label>
-                                <input type="email" id="email" name="user_email">
+                                <input type="email" id="email" name="user_email" maxlength="30" placeholder="Email address" required>
                               </li>
                               <li>
-                                <label for="msg">Message</label>
-                                <textarea id="message" name="user_message"></textarea>
+                                <textarea id="message" name="user_message" maxlength="500px" placeholder="Enter text here"></textarea>
                               </li>
                               <li class="get">
                                 <button type="submit" id="get_in_touch">Get in touch</button>
