@@ -201,7 +201,7 @@
                        so if you'd like to chat please get in touch.</p>
                 </div>
                 <div class="message">
-                    <form action="/contact" method="POST">
+                    <form action="/contact" method="POST" id="desktop">
                         <ul> 
                               <li>
                                 <label for="name">First Name</label>
@@ -224,11 +224,39 @@
                               </li>
                         </ul>
                       </form>
+                    <form action="/contact" method="POST" id="mobile">
+                        <ul> 
+                              <li>
+                                <label for="name">Full Name</label>
+                                <input type="text" id="full_name" name="full_name">
+                              </li>
+                              <li>
+                                <label for="email">E-mail</label>
+                                <input type="email" id="email" name="user_email">
+                              </li>
+                              <li>
+                                <label for="msg">Message</label>
+                                <textarea id="msg" name="user_message"></textarea>
+                              </li>
+                              <li class="get">
+                                <button type="submit" id="touch">Get in touch</button>
+                              </li>
+                        </ul>
+                      </form>
                 </div>
               </div>
         </section>
         <footer>
-
+            <div class="social_footer">
+                <ul>
+                    <li ><a href=""><i class="fa fa-twitter"></i></a></li>
+                    <li ><a href=""><i class="fa fa-linkedin"></i></a></li>
+                    <li ><a href=""><i class="fa fa-medium"></i></a></li>
+                    <li ><a href=""><i class="fa fa-github"></i></a></li>
+                    <li ><a href=""><i class="fa fa-angellist"></i></a></li>
+                </ul>
+            </div>
+            <p class="email">alvinlouis29@gmail.com</p>
         </footer>
     </main>
 </body>
