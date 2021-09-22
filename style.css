@@ -330,6 +330,101 @@ h1 {
   font-weight: 600;
 }
 
+/* ------- Contact Us ------ */
+
+.contact_us {
+  background-image: url(./images/about.png);
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  padding: 20px 143px;
+}
+
+.contact-wrapper {
+  display: flex;
+}
+
+.info {
+  width: 463px;
+  height: 256px;
+  display: flex;
+  align-items: center;
+}
+
+.info p {
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 30px;
+  line-height: 52px;
+  color: #172B4D;
+}
+
+.message {
+  padding: 10px 0;
+  width: 684px;
+}
+
+form {
+  display: grid;
+  flex-direction: column;
+  margin-left: 24px;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+form ul li {
+  margin-top: 24px;
+  position: relative;
+}
+
+label {
+  position: absolute;
+}
+
+input {
+  background: #FFFFFF;
+  border: 1px solid #D0D9D4;
+  box-sizing: border-box;
+}
+
+#name {
+  border-radius: 4px;
+  height: 48px;
+  display: flex;
+  flex-direction: row;
+  width: 40%;
+}
+
+#mail {
+  margin-top: 24px;
+  clear: both;
+  height: 48px;
+  width: 100%;
+}
+
+#msg {
+  height: 114px;
+  width: 100%;
+}
+
+#touch {
+  background-color: #36b37f;
+  color: white;
+  width: 129px;
+  height: 48px;
+  padding: 12px;
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 17px;
+  line-height: 24px;
+}
+
 @media all and (max-width: 500px) {
   .nav-menu {
     display: none;
