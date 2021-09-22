@@ -455,7 +455,7 @@ footer {
 
 .social_footer li a {
   padding: 0 10px;
-  color: #505F79;
+  color: #505f79;
   font-size: 20px;
 }
 
@@ -665,7 +665,7 @@ footer {
     height: 114px;
     width: 100%;
   }
-  
+
   .get {
     display: flex;
     justify-content: center;
