@@ -350,8 +350,8 @@ h1 {
 
 .info {
   width: 463px;
-  height: 256px;
   display: flex;
+  flex-direction: column;
   align-items: center;
 }
 
@@ -365,8 +365,9 @@ h1 {
 }
 
 .message {
-  padding: 10px 0;
-  width: 684px;
+  padding: 0;
+  margin: 0;
+  width: 100%;
 }
 
 form {
@@ -375,15 +376,12 @@ form {
   margin-left: 24px;
 }
 
-ul {
-  list-style: none;
-  padding: 0;
+form ul {
   margin: 0;
 }
 
 form ul li {
-  margin-top: 24px;
-  position: relative;
+  margin: 24px;
 }
 
 #mobile {
@@ -392,6 +390,7 @@ form ul li {
 
 label {
   position: absolute;
+  padding: 10px;
 }
 
 input {
@@ -400,17 +399,18 @@ input {
   box-sizing: border-box;
 }
 
+textarea {
+  background: #FFFFFF;
+  border: 1px solid #D0D9D4;
+  box-sizing: border-box;
+}
+
 #name {
-  border-radius: 4px;
-  height: 48px;
-  display: flex;
-  flex-direction: row;
   width: 40%;
+  height: 48px;
 }
 
 #mail {
-  margin-top: 24px;
-  clear: both;
   height: 48px;
   width: 100%;
 }
@@ -431,6 +431,11 @@ input {
   line-height: 24px;
 }
 
+footer { 
+  padding: 25px 0;
+  border-top: 1px solid #DFE1E6;
+}
+
 .social_footer {
   display: flex;
   justify-content: center;
@@ -447,6 +452,10 @@ input {
   padding: 0 10px;
   color: #505F79;
   font-size: 20px;
+}
+
+.email {
+  display: none;
 }
 
 @media all and (max-width: 500px) {
@@ -592,6 +601,7 @@ input {
     grid-row-gap: 20px;
     padding: 50px;
   }
+
     /* --------- Contact Us ------- */
   #mobile {
     display: flex;
