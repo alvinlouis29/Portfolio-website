@@ -51,11 +51,19 @@ button {
   justify-content: center;
 }
 
+form ul {
+  margin: 0;
+}
+
 .nav-menu ul {
   display: flex;
   width: fit-content;
   margin: 20px 0;
   position: fixed;
+}
+
+form ul li {
+  margin: 24px;
 }
 
 .nav-menu li {
@@ -361,7 +369,7 @@ h1 {
   font-weight: bold;
   font-size: 30px;
   line-height: 52px;
-  color: #172B4D;
+  color: #172b4d;
 }
 
 .message {
@@ -376,14 +384,6 @@ form {
   margin-left: 24px;
 }
 
-form ul {
-  margin: 0;
-}
-
-form ul li {
-  margin: 24px;
-}
-
 #mobile {
   display: none;
 }
@@ -394,18 +394,23 @@ label {
 }
 
 input {
-  background: #FFFFFF;
-  border: 1px solid #D0D9D4;
+  background: #fff;
+  border: 1px solid #d0d9d4;
   box-sizing: border-box;
 }
 
 textarea {
-  background: #FFFFFF;
-  border: 1px solid #D0D9D4;
+  background: #fff;
+  border: 1px solid #d0d9d4;
   box-sizing: border-box;
 }
 
 #name {
+  width: 40%;
+  height: 48px;
+}
+
+#last_name {
   width: 40%;
   height: 48px;
 }
@@ -431,9 +436,9 @@ textarea {
   line-height: 24px;
 }
 
-footer { 
+footer {
   padding: 25px 0;
-  border-top: 1px solid #DFE1E6;
+  border-top: 1px solid #dfe1e6;
 }
 
 .social_footer {
@@ -602,7 +607,7 @@ footer {
     padding: 50px;
   }
 
-    /* --------- Contact Us ------- */
+  /* --------- Contact Us ------- */
   #mobile {
     display: flex;
     margin: 58px 0 0 0;
@@ -656,12 +661,17 @@ footer {
     line-height: 24px;
   }
 
+  #message {
+    height: 114px;
+    width: 100%;
+  }
+  
   .get {
     display: flex;
     justify-content: center;
   }
 
-  #touch {
+  #get_in_touch {
     font-size: 17px;
     line-height: 24px;
     display: flex;
@@ -677,6 +687,6 @@ footer {
     text-align: center;
     padding-bottom: 100px;
     margin-top: 17px;
-    color: #42526E;
+    color: #42526e;
   }
 }
