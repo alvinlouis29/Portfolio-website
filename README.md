@@ -5,6 +5,7 @@
 > In this project i am building a personal portfolio website, by parsing the figma design to create the user interface for the website.
 
 ![screenshot](./app_screenshot.png)
+![Desktop view screenshot](./desktop_screenshot.png)
 
 The main objectives for this project are:
 
