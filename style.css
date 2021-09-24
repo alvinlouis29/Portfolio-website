@@ -59,7 +59,7 @@ form ul {
   display: flex;
   width: fit-content;
   margin: 20px 0;
-  position: fixed;
+  position: absolute;
 }
 
 form ul li {
