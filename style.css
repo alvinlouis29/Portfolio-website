@@ -72,12 +72,20 @@ button {
   justify-content: flex-end;
 }
 
+form ul {
+  margin: 0;
+}
+
 .menu-button ul {
   display: flex;
   flex-direction: column;
   justify-content: center;
   padding: 0 10px;
   margin: 0;
+}
+
+form ul li {
+  margin: 24px;
 }
 
 .menu-button li {
@@ -150,7 +158,6 @@ h1 {
 }
 
 .support {
-  padding: 20px;
   display: flex;
   text-align: center;
   justify-content: space-around;
@@ -187,7 +194,7 @@ h1 {
 .social li a {
   font-size: 20px;
   padding: 0 10px;
-  color: #505F79;
+  color: #505f79;
 }
 
 /* ----- Recent Section ----- */
@@ -215,7 +222,7 @@ h1 {
   color: #172b4d;
   margin: 24px 0;
 }
-  
+
 .cards {
   display: grid;
   align-content: center;
@@ -278,18 +285,22 @@ h1 {
 }
 
 /* --------- About ------- */
-  
+
 .about {
   padding: 20px 15px;
   background-image: url(./images/about-mobile.png);
   background-position: top;
   background-size: contain;
 }
-  
+
 .about p {
   padding: 30px 10px;
+  text-align: center;
+  padding: 40px 80px;
+  font-size: 20px;
+  color: #172b4d;
 }
-  
+
 .skill {
   display: grid;
   grid-template-columns: 300px;
@@ -303,24 +314,9 @@ h1 {
   font-size: 40px;
 }
 
-.about p {
-  text-align: center;
-  padding: 40px 80px;
-  font-size: 20px;
-  color: #172b4d;
-}
-
 .resume {
   justify-content: center;
   display: flex;
-}
-
-.skill {
-  display: grid;
-  grid-template-rows: 352px;
-  justify-content: center;
-  grid-column-gap: 20px;
-  padding: 50px;
 }
 
 .weight {
@@ -354,6 +350,11 @@ h1 {
   background-size: 120px;
   background-repeat: no-repeat;
   background-position: center;
+  display: grid;
+  grid-template-rows: 352px;
+  justify-content: center;
+  grid-column-gap: 20px;
+  padding: 50px;
 }
 
 .weight h1 {
@@ -431,14 +432,6 @@ h1 {
 form {
   display: flex;
   flex-direction: column;
-  margin: 24px;
-}
-
-form ul {
-  margin: 0;
-}
-
-form ul li {
   margin: 24px;
 }
 
@@ -557,8 +550,7 @@ input {
 }
 
 @media only screen and (min-width: 769px) {
-
-/* -------- Header -------- */
+  /* -------- Header -------- */
 
   .menu {
     display: none;
@@ -798,7 +790,7 @@ input {
   .info p {
     width: 463px;
     height: 256px;
-    font-family: 'Inter',sans-serif;
+    font-family: 'Inter', sans-serif;
     font-style: normal;
     font-weight: bold;
     font-size: 30px;
