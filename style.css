@@ -234,7 +234,7 @@ h1 {
 .card {
   align-self: center;
   justify-self: center;
-  min-height: 400px;
+  height: 400px;
   margin-top: 50px;
   width: 310px;
   border: 1px #ebf0ee solid;
@@ -689,7 +689,6 @@ input {
     font-size: 24px;
     font-weight: 600;
     line-height: 32px;
-    padding: 16px;
   }
 
   .sane {
