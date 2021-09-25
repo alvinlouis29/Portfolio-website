@@ -198,7 +198,7 @@ h1 {
 }
 
 /* ----- Recent Section ----- */
-  
+
 .recent_works {
   padding: 24px 0 0 26px;
 }
@@ -245,7 +245,7 @@ h1 {
   font-size: 24px;
   font-weight: 600;
   line-height: 32px;
-  padding: 16px;
+  margin: 16px;
 }
 
 .content {
@@ -259,13 +259,6 @@ h1 {
   background-color: #ebf0ee;
   border-radius: 10px 0;
   background-position: center;
-}
-
-.content ul {
-  display: flex;
-  justify-content: center;
-  padding: 20px 0;
-  padding: 10px;
 }
 
 .open {
@@ -294,7 +287,6 @@ h1 {
 }
 
 .about p {
-  padding: 30px 10px;
   text-align: center;
   padding: 40px 80px;
   font-size: 20px;
@@ -303,11 +295,11 @@ h1 {
 
 .skill {
   display: grid;
-  grid-template-columns: 300px;
-  grid-template-rows: repeat(3, 352px);
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(3, 1fr);
   justify-content: center;
-  grid-row-gap: 20px;
-  padding: 50px;
+  gap: 10px;
+  padding: 50px 143px;
 }
 
 .about h1 {
@@ -350,11 +342,6 @@ h1 {
   background-size: 120px;
   background-repeat: no-repeat;
   background-position: center;
-  display: grid;
-  grid-template-rows: 352px;
-  justify-content: center;
-  grid-column-gap: 20px;
-  padding: 50px;
 }
 
 .weight h1 {
@@ -683,9 +670,8 @@ input {
 
   .cards {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(3, 369px);
     grid-template-rows: repeat(2, 1fr);
-    padding: 10px;
     gap: 32px 24px;
   }
 
@@ -696,6 +682,7 @@ input {
     width: 100%;
     border: 2px #ebf0ee solid;
     border-radius: 10px;
+    padding: 0px;
   }
 
   .card h1 {
@@ -708,7 +695,7 @@ input {
   .sane {
     height: 252px;
     background-color: #ebf0ee;
-    border-radius: 10px 0;
+    border-radius: 0;
     background-position: center;
   }
 
@@ -764,7 +751,8 @@ input {
   }
 
   .skill {
-    grid-template-columns: repeat(3, 327px);
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(1, 1fr);
   }
 
   .weight h1 {
