@@ -682,7 +682,7 @@ input {
     width: 100%;
     border: 2px #ebf0ee solid;
     border-radius: 10px;
-    padding: 0px;
+    padding: 0;
   }
 
   .card h1 {
