@@ -224,7 +224,7 @@ h1 {
 .cards {
   display: grid;
   align-content: center;
-  padding: 40px;
+  padding: 40px 24px;
   grid-template-columns: 1fr;
   grid-template-rows: repeat(6, 1fr);
   gap: 32px 24px;
@@ -234,8 +234,7 @@ h1 {
   align-self: center;
   justify-self: center;
   height: 100%;
-  margin-top: 50px;
-  width: 310px;
+  width: 327px;
   border: 1px #ebf0ee solid;
   border-radius: 10px;
   padding: 0;
@@ -291,7 +290,7 @@ h1 {
   background-position: center;
   background-size: contain;
   background-repeat: no-repeat;
-  margin-top: 192px;
+  margin-top: 68px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -302,6 +301,7 @@ h1 {
   padding: 24px 12px;
   font-size: 20px;
   color: #172b4d;
+  line-height: 32px;
 }
 
 .skill {
