@@ -226,19 +226,21 @@ h1 {
 .cards {
   display: grid;
   align-content: center;
-  padding: 1px;
+  padding: 40px;
   grid-template-columns: 1fr;
   grid-template-rows: repeat(6, 1fr);
+  gap: 32px 24px;
 }
 
 .card {
   align-self: center;
   justify-self: center;
-  height: 400px;
+  height: 100%;
   margin-top: 50px;
   width: 310px;
   border: 1px #ebf0ee solid;
   border-radius: 10px;
+  padding: 0;
 }
 
 .card h1 {
@@ -252,6 +254,13 @@ h1 {
   padding: 20px 0;
   background-color: white;
   border-radius: 10px;
+}
+
+.content ul {
+  display: flex;
+  justify-content: center;
+  padding: 20px 0;
+  padding: 10px;
 }
 
 .sane {
@@ -279,11 +288,16 @@ h1 {
 
 /* --------- About ------- */
 
+  
 .about {
-  padding: 20px 15px;
-  background-image: url(./images/about-mobile.png);
-  background-position: top;
+  background-image: url(./images/about.png);
+  background-position: center;
   background-size: contain;
+  background-repeat: no-repeat;
+  margin-top: 192px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .about p {
@@ -299,7 +313,7 @@ h1 {
   grid-template-rows: repeat(3, 1fr);
   justify-content: center;
   gap: 10px;
-  padding: 50px 143px;
+  padding: 50px 80px;
 }
 
 .about h1 {
