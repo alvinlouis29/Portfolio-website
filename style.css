@@ -16,7 +16,6 @@ body {
 
 ul li {
   list-style: none;
-  box-sizing: unset;
   text-decoration: none;
 }
 
@@ -31,60 +30,89 @@ a {
 }
 
 .hidden {
-  visibility: hidden;
+  display: none;
 }
 
 button {
   border-style: none;
 }
 
-/* -------- Header -------- */
-
-.menu {
+.nav-menu {
   display: none;
 }
 
-/* --------- navigation menu ------- */
-
-.nav-menu {
+.menu {
   display: flex;
-  justify-content: center;
+  flex-basis: 50%;
+  padding: 5px;
+}
+
+.menu-logo {
+  display: flex;
+  flex: 1;
+  padding: 24px 36px 24px 24px;
+  margin: 0;
+}
+
+.menu-logo a {
+  width: 90px;
+  height: 28px;
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 28px;
+  color: #28352f;
+}
+
+.menu-button {
+  display: flex;
+  flex: 1;
+  justify-content: flex-end;
 }
 
 form ul {
   margin: 0;
 }
 
-.nav-menu ul {
+.menu-button ul {
   display: flex;
-  width: fit-content;
-  margin: 20px 0;
-  position: fixed;
+  flex-direction: column;
+  justify-content: center;
+  padding: 0 10px;
+  margin: 0;
 }
 
 form ul li {
   margin: 24px;
 }
 
-.nav-menu li {
-  padding: 0 20px;
+.menu-button li {
+  align-self: center;
+  padding: 1px;
 }
 
-.nav-menu a {
-  text-decoration: none;
-  color: black;
+.bar {
+  background-color: rgb(32, 14, 14);
+  height: 0;
+  width: 16px;
+  left: 4px;
+  top: 17px;
+  border-radius: 5px;
+  border: 2px solid #fff;
 }
 
-/* --------- hero section ------- */
+/* ------- hero - section  ------ */
 
 .hero {
   display: flex;
   background-image: url(./images/one.png);
   background-size: cover;
   background-repeat: no-repeat;
-  min-height: 100vh;
+  padding: 58px 24px;
+  min-height: 85vh;
   justify-content: center;
-  padding: 150px 320px;
+  background-position: center;
   color: #172b4d;
 }
 
@@ -115,7 +143,13 @@ h1 {
   justify-content: center;
   font-family: 'Inter', sans-serif;
   font-style: normal;
-  font-weight: bold;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 52px;
+  width: 327px;
+  height: 192px;
+  left: 24px;
+  top: 64px;
 }
 
 .primary span {
@@ -126,31 +160,16 @@ h1 {
   display: flex;
   text-align: center;
   justify-content: space-around;
-  padding: 10px 80px;
-}
-
-.support p {
-  font-family: 'Inter', sans-serif;
-  font-style: normal;
-  font-weight: normal;
+  padding: 20px;
   font-size: 20px;
   line-height: 28px;
-  color: #172b4d;
-  margin: 58px 0;
-}
-
-/* -------- social ------- */
-
-.social {
-  display: flex;
-  justify-content: center;
 }
 
 .social ul {
   display: flex;
   justify-content: center;
-  width: fit-content;
   letter-spacing: 5px;
+  padding: 0;
 }
 
 .open a {
@@ -158,7 +177,6 @@ h1 {
   border-radius: 2px;
   color: white;
   padding: 12px;
-  margin: 5px 4px;
   font-size: 17px;
 }
 
@@ -172,49 +190,65 @@ h1 {
 }
 
 .social li a {
-  padding: 0 10px;
-  color: #172b4d;
   font-size: 20px;
+  padding: 0 10px;
+  color: #505f79;
 }
 
-/* ---- My Recents Works ------ */
+/* ----- Recent Section ----- */
 
 .recent_works {
-  padding: 60px 70px;
+  padding: 24px 0 0 26px;
+}
+
+.recent_title {
+  display: flex;
+  justify-content: center;
+}
+
+.recent_title h1 {
+  width: 327px;
+  height: 97px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 52px;
+  color: #172b4d;
+  margin: 24px 0;
 }
 
 .cards {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: repeat(3, 40%);
-  padding: 0;
+  align-content: center;
+  padding: 40px 24px;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(6, 1fr);
+  gap: 32px 24px;
 }
 
 .card {
   align-self: center;
   justify-self: center;
-  margin-top: 150px;
-  min-height: 400px;
-  width: 340px;
+  height: 100%;
+  width: 327px;
   border: 1px #ebf0ee solid;
   border-radius: 10px;
+  padding: 0;
 }
 
 .card h1 {
   font-size: 24px;
   font-weight: 600;
   line-height: 32px;
-  padding: 16px;
-}
-
-.sane {
-  height: 200px;
-  background-color: #ebf0ee;
-  border-radius: 10px 0;
-  background-position: center;
+  margin: 16px;
 }
 
 .content {
+  padding: 20px 0;
   background-color: white;
   border-radius: 10px;
 }
@@ -226,10 +260,17 @@ h1 {
   padding: 10px;
 }
 
+.sane {
+  height: 200px;
+  background-color: #ebf0ee;
+  border-radius: 10px 0;
+  background-position: center;
+}
+
 .open {
   display: flex;
   justify-content: center;
-  padding: 5px;
+  padding: 29px 0 0 0;
 }
 
 .content li a {
@@ -242,42 +283,47 @@ h1 {
   line-height: 16px;
 }
 
-/* ------- About Myself ------ */
+/* --------- About ------- */
 
 .about {
   background-image: url(./images/about.png);
   background-position: center;
   background-size: contain;
   background-repeat: no-repeat;
-  padding: 20px 200px;
+  margin-top: 68px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.about p {
+  text-align: center;
+  padding: 24px 12px;
+  font-size: 20px;
+  color: #172b4d;
+  line-height: 32px;
+}
+
+.skill {
+  display: grid;
+  grid-template-rows: repeat(3, 1fr);
+  justify-content: center;
+  gap: 24px;
 }
 
 .about h1 {
   font-size: 40px;
 }
 
-.about p {
-  text-align: center;
-  padding: 40px 80px;
-  font-size: 20px;
-  color: #172b4d;
-}
-
 .resume {
   justify-content: center;
   display: flex;
-}
-
-.skill {
-  display: grid;
-  grid-template-columns: repeat(3, 327px);
-  grid-template-rows: 352px;
-  justify-content: center;
-  grid-column-gap: 20px;
-  padding: 50px;
+  margin: 24px 0 59px 0;
 }
 
 .weight {
+  width: 327px;
+  height: 350px;
   background-color: #ebf0ee;
   border: 1px #a0a0a0 solid;
   border-radius: 10px;
@@ -342,33 +388,38 @@ h1 {
   font-weight: 600;
 }
 
-/* ------- Contact Us ------ */
+/* --------- Contact Us ------- */
 
 .contact_us {
   background-image: url(./images/about.png);
   background-position: center;
   background-size: contain;
   background-repeat: no-repeat;
-  padding: 20px 143px;
+  padding: 24px;
 }
 
 .contact-wrapper {
   display: flex;
+  flex-direction: column;
 }
 
 .info {
-  width: 463px;
   display: flex;
-  align-items: center;
+  justify-content: center;
+  width: 100%;
+  text-align: center;
+  padding: 20px 24px;
 }
 
 .info p {
   font-family: 'Inter', sans-serif;
   font-style: normal;
-  font-weight: bold;
-  font-size: 30px;
+  font-weight: 700;
+  font-size: 40px;
   line-height: 52px;
   color: #172b4d;
+  width: 327px;
+  height: 363px;
 }
 
 .message {
@@ -380,7 +431,7 @@ h1 {
 form {
   display: flex;
   flex-direction: column;
-  margin-left: 24px;
+  margin: 24px;
 }
 
 .names {
@@ -408,70 +459,62 @@ form {
 }
 
 #mobile {
+  display: flex;
+  margin: 58px 0 0 0;
+}
+
+.contact p {
+  font-size: 40px;
+  line-height: 52px;
+  padding: 0;
+}
+
+#desktop {
   display: none;
 }
 
 input {
-  background: #fff;
-  border: 1px solid #d0d9d4;
-  box-sizing: border-box;
-}
-
-textarea {
-  background: #fff;
-  border: 1px solid #d0d9d4;
-  box-sizing: border-box;
-}
-
-#name {
-  padding: 15px 16px;
   width: 100%;
-  height: 48px;
-  margin: 0;
-  color: #6b778c;
 }
 
-#last_name {
+#full_name {
   padding: 15px 16px;
-  width: 100%;
-  height: 48px;
-  margin: 0;
-  color: #6b778c;
+  font-size: 15px;
+  line-height: 24px;
 }
 
-#mail {
+#email {
   padding: 15px 16px;
-  height: 48px;
-  width: 100%;
-  color: #6b778c;
+  font-size: 15px;
+  line-height: 24px;
 }
 
-#msg {
+#message {
   font-family: 'Inter', sans-serif;
   font-weight: normal;
   font-style: normal;
   font-size: 15px;
   line-height: 24px;
+  padding: 12px;
   height: 114px;
   width: 100%;
   color: #091e42;
-  padding: 15px 16px;
 }
 
-#touch {
+.get {
+  display: flex;
+  justify-content: center;
+}
+
+#get_in_touch {
   background-color: #36b37f;
   color: white;
-  padding: 12px;
-  font-family: 'Inter', sans-serif;
-  font-style: normal;
-  font-weight: 500;
   font-size: 17px;
   line-height: 24px;
-}
-
-footer {
-  padding: 25px 0;
-  border-top: 1px solid #dfe1e6;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  padding: 12px;
 }
 
 .social_footer {
@@ -493,240 +536,14 @@ footer {
 }
 
 .email {
-  display: none;
-}
-
-@media all and (max-width: 500px) {
-  .nav-menu {
-    display: none;
-  }
-
-  .menu {
-    display: flex;
-    flex-basis: 50%;
-    padding: 5px;
-  }
-
-  .menu-logo {
-    display: flex;
-    flex: 1;
-    padding: 24px 36px 24px 24px;
-    margin: 0;
-  }
-
-  .menu-logo a {
-    width: 90px;
-    height: 28px;
-    font-family: Inter, sans-serif;
-    font-style: normal;
-    font-weight: 600;
-    font-size: 20px;
-    line-height: 28px;
-    color: #28352f;
-  }
-
-  .menu-button {
-    display: flex;
-    flex: 1;
-    justify-content: flex-end;
-  }
-
-  .menu-button ul {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    padding: 0 10px;
-    margin: 0;
-  }
-
-  .menu-button li {
-    align-self: center;
-    padding: 1px;
-  }
-
-  .bar {
-    background-color: rgb(32, 14, 14);
-    height: 0;
-    width: 16px;
-    left: 4px;
-    top: 17px;
-    border-radius: 5px;
-    border: 2px solid #fff;
-  }
-
-  /* ------- hero - section  ------ */
-
-  .hero {
-    padding: 58px 24px;
-    min-height: 85vh;
-    background-position: center;
-  }
-
-  .primary h1 {
-    margin: 0;
-    font-family: 'Inter', sans-serif;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 40px;
-    line-height: 52px;
-    width: 327px;
-    height: 192px;
-    left: 24px;
-    top: 64px;
-  }
-
-  .support {
-    padding: 20px;
-  }
-
-  .social ul {
-    padding: 0;
-  }
-
-  /* ----- Recent Section ----- */
-
-  .recent_works {
-    padding: 6px;
-  }
-
-  .recent_title h1 {
-    display: flex;
-    align-items: center;
-    text-align: center;
-    font-family: 'Inter', sans-serif;
-    font-style: normal;
-    font-weight: 700;
-    font-size: 40px;
-    line-height: 52px;
-    color: #172b4d;
-    padding: 0 26px;
-  }
-
-  .cards {
-    align-content: center;
-    padding: 1px;
-    grid-template-columns: 1fr;
-    grid-template-rows: repeat(6, 1fr);
-  }
-
-  .card {
-    margin-top: 50px;
-    width: 310px;
-  }
-
-  .content {
-    padding: 20px 0;
-  }
-
-  /* --------- About ------- */
-
-  .about {
-    padding: 20px 15px;
-    background-image: url(./images/about-mobile.png);
-    background-position: top;
-    background-size: contain;
-  }
-
-  .about p {
-    padding: 30px 10px;
-  }
-
-  .skill {
-    display: grid;
-    grid-template-columns: 300px;
-    grid-template-rows: repeat(3, 352px);
-    justify-content: center;
-    grid-row-gap: 20px;
-    padding: 50px;
-  }
-
-  /* --------- Contact Us ------- */
-  #mobile {
-    display: flex;
-    margin: 58px 0 0 0;
-  }
-
-  .contact_us {
-    padding: 0;
-  }
-
-  .contact-wrapper {
-    flex-direction: column;
-  }
-
-  .contact p {
-    font-size: 40px;
-    line-height: 52px;
-    padding: 0;
-  }
-
-  .info {
-    width: 100%;
-    text-align: center;
-    padding: 20px 24px;
-  }
-
-  #desktop {
-    display: none;
-  }
-
-  .message {
-    width: 100%;
-  }
-
-  input {
-    width: 100%;
-  }
-
-  #full_name {
-    padding: 15px 16px;
-    font-size: 15px;
-    line-height: 24px;
-  }
-
-  #email {
-    padding: 15px 16px;
-    font-size: 15px;
-    line-height: 24px;
-  }
-
-  #message {
-    font-family: 'Inter', sans-serif;
-    font-weight: normal;
-    font-style: normal;
-    font-size: 15px;
-    line-height: 24px;
-    padding: 12px;
-    height: 114px;
-    width: 100%;
-  }
-
-  .get {
-    display: flex;
-    justify-content: center;
-  }
-
-  #get_in_touch {
-    background-color: #36b37f;
-    color: white;
-    font-size: 17px;
-    line-height: 24px;
-    display: flex;
-    justify-content: center;
-    text-align: center;
-    padding: 12px;
-  }
-
-  .email {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    font-weight: normal;
-    font-size: 20px;
-    line-height: 32px;
-    text-align: center;
-    padding-bottom: 100px;
-    margin-top: 17px;
-    color: #42526e;
-  }
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 32px;
+  text-align: center;
+  padding-bottom: 100px;
+  margin-top: 17px;
+  color: #42526e;
 }
