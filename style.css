@@ -550,13 +550,11 @@ input {
 
 @media only screen and (min-width: 992px) {
   /* -------- Header -------- */
-  
+
   section {
-    max-width: 1440px;
-    padding: 0 135px 0 134px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+    padding: 0 135px;
+    margin: 0;
+    width: 100%;
   }
 
   .menu {
