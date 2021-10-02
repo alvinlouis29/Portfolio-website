@@ -180,10 +180,6 @@ h1 {
   font-size: 17px;
 }
 
-.open a:hover {
-  background-color: #091e42;
-}
-
 .resume a {
   background-color: #36b37f;
   border-radius: 2px;
@@ -191,10 +187,6 @@ h1 {
   padding: 12px;
   margin: 5px 4px;
   font-size: 17px;
-}
-
-.resume a:hover {
-  background-color: #091e42;
 }
 
 .social li a {
@@ -889,6 +881,14 @@ input {
     padding: 0 10px;
     color: #505f79;
     font-size: 20px;
+  }
+
+  .open a:hover {
+    background-color: #091e42;
+  }
+
+  .resume a:hover {
+    background-color: #091e42;
   }
 
   .email {
