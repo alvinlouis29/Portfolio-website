@@ -13,7 +13,7 @@ The main objectives for this project are:
 3. Build a personal portfolio site.
 4. Use images and backgrounds to enhance the look of the website.
 
-## [Online Version](https://alvinlouis29.github.io/)
+## [Online Version](https://alvinlouis29.github.io/Portfolio-website/)
 
 ## To run the project locally :
 
