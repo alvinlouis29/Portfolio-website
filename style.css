@@ -153,7 +153,7 @@ h1 {
 }
 
 .primary span {
-  color: #36b37f;
+  color: #247a56;
 }
 
 .support {
@@ -173,7 +173,7 @@ h1 {
 }
 
 .open a {
-  background-color: #36b37f;
+  background-color: #247a56;
   border-radius: 2px;
   color: white;
   padding: 12px;
@@ -181,7 +181,7 @@ h1 {
 }
 
 .resume a {
-  background-color: #36b37f;
+  background-color: #247a56;
   border-radius: 2px;
   color: white;
   padding: 12px;
@@ -383,7 +383,7 @@ h1 {
   border-radius: 2px;
   padding: 10px;
   margin: 10px 4px;
-  color: #36b37e;
+  color: #247a56;
   font-size: 12px;
   font-weight: 600;
 }
@@ -507,7 +507,7 @@ input {
 }
 
 #get_in_touch {
-  background-color: #36b37f;
+  background-color: #247a56;
   color: white;
   font-size: 17px;
   line-height: 24px;
@@ -616,7 +616,7 @@ input {
   }
 
   .primary span {
-    color: #36b37f;
+    color: #247a56;
   }
 
   .support {
@@ -646,7 +646,7 @@ input {
   }
 
   .open a {
-    background-color: #36b37f;
+    background-color: #247a56;
     border-radius: 2px;
     color: white;
     padding: 12px;
@@ -655,7 +655,7 @@ input {
   }
 
   .resume a {
-    background-color: #36b37f;
+    background-color: #247a56;
     border-radius: 2px;
     color: white;
     padding: 12px;
@@ -850,7 +850,7 @@ input {
   }
 
   #touch {
-    background-color: #36b37f;
+    background-color: #247a56;
     color: white;
     padding: 12px;
     font-family: 'Inter', sans-serif;
