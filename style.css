@@ -582,6 +582,7 @@ input {
   .nav-menu a {
     text-decoration: none;
     color: #172b4d;
+    font-size: 18px;
   }
 
   /* --------- hero section ------- */
