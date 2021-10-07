@@ -578,6 +578,7 @@ input {
   .nav-menu li {
     padding: 0 20px;
     font-size: 20px;
+    background-color: #fff;
   }
 
   .nav-menu a {
