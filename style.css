@@ -274,11 +274,11 @@ h1 {
 }
 
 .content li a {
-  background-color: #ebf0ee;
+  background-color: #587469;
   border-radius: 2px;
   padding: 12px 8px;
   margin: 0 4px;
-  color: #172b4d;
+  color: #ffffff;
   font-size: 12px;
   line-height: 16px;
 }
@@ -324,7 +324,7 @@ h1 {
 .weight {
   width: 327px;
   height: 350px;
-  background-color: #ebf0ee;
+  background-color: #575757;
   border: 1px #a0a0a0 solid;
   border-radius: 10px;
 }
@@ -357,7 +357,7 @@ h1 {
 }
 
 .weight h1 {
-  color: #344563;
+  color: #FFFFFF;
   font-size: 24px;
   line-height: 34px;
   padding: 10px;
@@ -646,7 +646,7 @@ input {
   }
 
   .open a {
-    background-color: #247a56;
+    background-color: #237653;
     border-radius: 2px;
     color: white;
     padding: 12px;
