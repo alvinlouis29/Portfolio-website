@@ -38,6 +38,8 @@ button {
 }
 
 .nav-menu {
+  left: -100%;
+  transition: left 0.5s;
   position: fixed;
   width: 100%;
   height: 100%;
@@ -74,7 +76,7 @@ button {
 }
 
 .menu-out {
-  left: -200%;
+  left: 0;
 }
 
 .menu {

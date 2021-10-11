@@ -1,6 +1,11 @@
 let closeButton = document.getElementById('close');
+let humbugerMenu = document.getElementById('humbuger');
+let mobileMenu = document.getElementById('mobileMenu');
 
- closeButton.onclick = function() {
-     let mobileMenu = document.getElementById('mobileMenu');
-     mobileMenu.classList.add('menu-out')
- }
+function hide() {
+    mobileMenu.classList.toggle('menu-out')
+}
+
+closeButton.onclick = hide;
+humbugerMenu.onclick = hide;
+
