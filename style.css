@@ -48,6 +48,7 @@ button {
 .close-button {
   color: #e5e5e5;
   border: 2px solid #67798E;
+  text-shadow: 1px 1px 0 #e5e5e5;
 }
 
 .menu {
