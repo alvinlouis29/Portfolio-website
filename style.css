@@ -73,6 +73,10 @@ button {
   text-shadow: 1px 1px 1px #67798e;
 }
 
+.menu-out {
+  left: -200%;
+}
+
 .menu {
   display: flex;
   flex-basis: 50%;
@@ -229,10 +233,6 @@ h1 {
 }
 
 /* ----- Recent Section ----- */
-
-.recent_works {
-  padding: 24px 0 0 26px;
-}
 
 .recent_title {
   display: flex;
