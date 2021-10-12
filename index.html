@@ -9,6 +9,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+    <script src="./script/index.js" type="module"></script>
     <title>Personal Portfolio Website</title><!-- Global site tag (gtag.js) - Google Analytics -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-M120CFVZ43"></script>
 <script>
@@ -25,7 +26,7 @@
             <div class="menu-logo">
                 <a href="#">Welcome</a>
             </div>
-            <nav class="menu-button">
+            <nav id="humbuger" class="menu-button">
                 <ul>
                     <li class="bar"> </li>
                     <li class="bar"> </li>
@@ -33,11 +34,12 @@
                 </ul>
             </nav>
         </header>
-        <nav class="nav-menu">
+        <nav id="mobileMenu" class="nav-menu">
+            <span id="close" class="close-button">X</span>
             <ul>
-                <li><a href="#">Portfolio</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Contact</a></li>
+                <li class="menu-item"><a href="#portfolio">Portfolio</a></li>
+                <li class="menu-item"><a href="#about">About</a></li>
+                <li class="menu-item"><a href="#contact">Contact</a></li>
             </ul>
         </nav>
         <section class="hero">
@@ -68,7 +70,7 @@
                 </div>
             </div>
         </section>
-        <section class="recent_works">
+        <section id="portfolio" class="recent_works">
             <div class="recent_title">
                 <h1>My Recent Works</h1>
             </div>
@@ -158,7 +160,7 @@
                 </article>
             </div>
         </section>
-        <section class="about">
+        <section id="about" class="about">
             <h1>About</h1>
             <p> I can help you build a product , feature or website Look through some of my work and experience! If you like what you see and have a project you need coded,
                 don’t hestiate to contact me.</p>
@@ -201,7 +203,7 @@
                 </li>
             </ul>
         </section>
-        <section class="contact_us">
+        <section id="contact" class="contact_us">
             <h1 class="hidden">Contact Us</h1>
             <div class="contact-wrapper">
                 <div class="info">
