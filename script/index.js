@@ -1,11 +1,15 @@
-let closeButton = document.getElementById('close');
-let humbugerMenu = document.getElementById('humbuger');
-let mobileMenu = document.getElementById('mobileMenu');
+const closeButton = document.getElementById('close');
+const humbugerMenu = document.getElementById('humbuger');
+const mobileMenu = document.getElementById('mobileMenu');
+const menuItems = document.getElementsByClassName('menu-item');
 
 function hide() {
-    mobileMenu.classList.toggle('menu-out')
+  mobileMenu.classList.toggle('menu-out');
 }
 
 closeButton.onclick = hide;
 humbugerMenu.onclick = hide;
 
+for (let i = 0; i < menuItems.length; i += 1) {
+  menuItems[i].onclick = hide;
+}
