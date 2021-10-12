@@ -47,25 +47,6 @@ button {
   z-index: 10;
 }
 
-.nav-menu ul {
-  margin-top: 108px;
-  margin-left: 5%;
-}
-
-.nav-menu ul li a {
-  width: 66.93%;
-  color: #3a4a42;
-  margin-bottom: 40px;
-  font-style: normal;
-  font-weight: 600;
-  font-size: 32px;
-  line-height: 44px;
-  /* or 137% */
-
-  display: flex;
-  align-items: center;
-}
-
 .close-button {
   top: 30px;
   right: 40px;
@@ -111,6 +92,11 @@ button {
 
 form ul {
   margin: 0;
+}
+
+.nav-menu ul {
+  margin-top: 108px;
+  margin-left: 5%;
 }
 
 .menu-button ul {
@@ -432,6 +418,18 @@ h1 {
   font-weight: 600;
 }
 
+.nav-menu ul li a {
+  width: 66.93%;
+  color: #3a4a42;
+  margin-bottom: 40px;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 44px;
+  display: flex;
+  align-items: center;
+}
+
 /* --------- Contact Us ------- */
 
 .contact_us {
@@ -591,8 +589,6 @@ input {
   margin-top: 17px;
   color: #42526e;
 }
-
-
 
 @media only screen and (min-width: 992px) {
   /* -------- Header -------- */
