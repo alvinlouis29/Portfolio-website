@@ -305,7 +305,6 @@ h1 {
   align-items: center;
 }
 
-
 .modal-header .close-butt { 
   cursor: pointer;
   border: none;
@@ -319,6 +318,7 @@ h1 {
 .portfolio_snapshot {
   width: 100%;
   background-image: url(/images/Snapshoot\ Portfolio.png);
+  background-repeat: no-repeat;
 }
 
 #overlay {
@@ -877,7 +877,6 @@ input {
   .open {
     display: flex;
     justify-content: center;
-    padding: 5px;
   }
 
   /* ------- About Myself ------ */
