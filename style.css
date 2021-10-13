@@ -277,6 +277,109 @@ h1 {
   margin: 16px;
 }
 
+.modal {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(0);
+  transition: 200ms ease-in-out;
+  height: 100%;
+  width: 80%;
+  max-width: 500px;
+  margin: 10px auto;
+  border: 1px #323333 solid;
+  border-radius: 10px;
+  padding: 16px;
+  background-color: rgb(255, 255, 255);
+  z-index: 10;
+}
+
+.modal.active {
+  transform: translate(-50%, -50%) scale(1);
+}
+
+.modal-header {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+
+.modal-header .close-butt { 
+  cursor: pointer;
+  border: none;
+  align-self: flex-end;
+  position: absolute;
+  margin: 22px;
+  background: none;
+  font-size: 35px;
+}
+
+.portfolio_snapshot {
+  width: 100%;
+  background-image: url(/images/Snapshoot\ Portfolio.png);
+}
+
+#overlay {
+  position: fixed;
+  opacity: 0;
+  transition: 200ms ease-in-out;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, .5);
+  pointer-events: none;
+}
+
+#overlay.active {
+  opacity: 1;
+  pointer-events: all;
+}
+
+.title {
+  text-align: left;
+  padding: 10px;
+  font-size: 32px;
+  line-height: 44px;
+  margin: 12px 0;
+}
+
+.pop_items ul {
+  display: flex;
+  justify-content: left;
+  padding: 10px;
+}
+
+.pop_items ul li a {
+  background-color: #587469;
+  border-radius: 2px;
+  padding: 12px 8px;
+  margin: 0 4px;
+  color: #fff;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 16px;
+}
+
+.pop_paragraph {
+  padding: 10px;
+  font-size: 16px;
+  line-height: 24px;
+  margin: 12px 0;
+}
+
+.pop_button {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.pop_button .see i {
+  color: #fff;
+}
+
 .content {
   padding: 20px 0;
   background-color: white;

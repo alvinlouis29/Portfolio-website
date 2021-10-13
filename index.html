@@ -70,6 +70,7 @@
                 </div>
             </div>
         </section>
+
         <section id="portfolio" class="recent_works">
             <div class="recent_title">
                 <h1>My Recent Works</h1>
@@ -86,7 +87,8 @@
                                 <li><a href="#">Javascript</a></li>
                                 <li><a href="#">Html</a></li>
                         </ul>
-                         <div class="open"><a href="#">See Project</a></div>
+                         <div class="open"><button  data-modal-target="#modal"><a href="#">See Project</a></button></div>
+                         
                     </div>
                 </article>
                 <article class="card">
@@ -99,7 +101,7 @@
                                 <li><a href="#">Javascript</a></li>
                                 <li><a href="#">Html</a></li>
                         </ul>
-                         <div class="open"><a href="#">See Project</a></div>
+                         <div class="open"><button  data-modal-target="#modal"><a href="#">See Project</a></button></div>
                     </div>
                 </article>
                 <article class="card">
@@ -113,7 +115,7 @@
                                 <li><a href="#">Javascript</a></li>
                                 <li><a href="#">Html</a></li>
                         </ul>
-                         <div class="open"><a href="#">See Project</a></div>
+                         <div class="open"><button  data-modal-target="#modal"><a href="#">See Project</a></button></div>
                     </div>
                 </article>
                 <article class="card">
@@ -127,7 +129,7 @@
                                 <li><a href="#">Javascript</a></li>
                                 <li><a href="#">Html</a></li>
                         </ul>
-                         <div class="open"><a href="#">See Project</a></div>
+                         <div class="open"><button  data-modal-target="#modal"><a href="#">See Project</a></button></div>
                     </div>
                 </article>
                 <article class="card">
@@ -141,7 +143,7 @@
                                 <li><a href="#">Javascript</a></li>
                                 <li><a href="#">Html</a></li>
                         </ul>
-                         <div class="open"><a href="#">See Project</a></div>
+                         <div class="open"><button  data-modal-target="#modal"><a href="#">See Project</a></button></div>
                     </div>
                 </article>
                 <article class="card">
@@ -155,11 +157,39 @@
                                 <li><a href="#">Javascript</a></li>
                                 <li><a href="#">Html</a></li>
                         </ul>
-                         <div class="open"><a href="#">See Project</a></div>
+                         <div class="open"><button  data-modal-target="#modal"><a href="#">See Project</a></button></div>
                     </div>
                 </article>
             </div>
+
+            <div class="modal" id="modal">
+                <div class="modal-header">
+                    <button data-close-button class="close-butt">&times;</button>
+                    <div class="portfolio_snapshot sane"></div>
+                </div>          
+                <div class="pop_title"> <h1 class="title">Keeping track of hundreds of components</h1></div>
+                <div class="pop_items">
+                    <ul>
+                        <li><a href="#"> Ruby on Rails</a></li>
+                        <li><a href="#">Css</a></li>
+                        <li><a href="#">Javascript</a></li>
+                    </ul>
+                </div>
+                <div class="pop_paragraph">Lorem Ipsum is simply dummy text of the printing
+                     and typesetting industry. Lorem Ipsum has been the industry's standard
+                    dummy text ever since the 1500s, when an unknown printer took a galley of 
+                    type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text
+                    of the printing and typesetting industry. Lorem Ipsum has been the industry's
+                    standard dummy text ever since the 1500s, when an un
+                    took a galley of type and scrambled it 1960s with the release</div>
+                <div class="pop_button">
+                    <div class="open see"><a href="#">See Live<i class="fa fa-github"></i></a></div>
+                    <div class="open see"><a href="#">See Source<i class="fa fa-github"></i></a></div>
+                </div>
+            </div>
+            <div id="overlay"></div>
         </section>
+
         <section id="about" class="about">
             <h1>About</h1>
             <p> I can help you build a product , feature or website Look through some of my work and experience! If you like what you see and have a project you need coded,
