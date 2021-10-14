@@ -2,7 +2,6 @@ const closeButton = document.getElementById('close');
 const humbugerMenu = document.getElementById('humbuger');
 const mobileMenu = document.getElementById('mobileMenu');
 const menuItems = document.getElementsByClassName('menu-item');
-const openModalButtons = document.querySelectorAll('[data-modal-target]')
 const closeModalButtons = document.querySelectorAll('[data-close-button]')
 const overlay = document.getElementById('overlay')
 
@@ -18,13 +17,6 @@ for (let i = 0; i < menuItems.length; i += 1) {
 }
 
 // MODAL
-
-openModalButtons.forEach(button => {
-  button.addEventListener('click', () => {
-    const modal = document.querySelector(button.dataset.modalTarget)
-    openModal(modal)
-  })
-})
 
 overlay.addEventListener('click', () => {
   const modals = document.querySelectorAll('.modal.active')
@@ -52,95 +44,88 @@ function closeModal(modal) {
   overlay.classList.remove('active')
 }
 
-let cards = [
-  {name:"", description, featuredImage, technologies, linkToLiveVersion, linkToSource}
-]
+let cardSection = document.createElement('div');
+cardSection.className = 'cards'
 
+let cards = [{
+  name:"Multi-post Stories <br>Gain + Glory", 
+  description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an un took a galley of type and scrambled it 1960s with the release", 
+  featuredImage: '/images/Snapshoot Portfolio-desk.png',
+  technologies: ['Ruby on Rails', 'Css', 'Javascript', 'Html'],
+  linkToLiveVersion: "https://livev.com",
+  linkToSource: "https://github.com"
+},
+{
+  name:"Multi-post Stories <br>Gain + Glory", 
+  description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an un took a galley of type and scrambled it 1960s with the release", 
+  featuredImage: '/images/Snapshoot Portfolio-desk.png',
+  technologies: ['Ruby on Rails', 'Css', 'Javascript', 'Html'],
+  linkToLiveVersion: "https://livev.com",
+  linkToSource: "https://github.com"
+},
+{
+  name:"Multi-post Stories <br>Gain + Glory", 
+  description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an un took a galley of type and scrambled it 1960s with the release", 
+  featuredImage: '/images/Snapshoot Portfolio-desk.png',
+  technologies: ['Ruby on Rails', 'Css', 'Javascript', 'Html'],
+  linkToLiveVersion: "https://livev.com",
+  linkToSource: "https://github.com"
+},
+{
+  name:"Multi-post Stories <br>Gain + Glory", 
+  description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an un took a galley of type and scrambled it 1960s with the release", 
+  featuredImage: '/images/Snapshoot Portfolio-desk.png',
+  technologies: ['Ruby on Rails', 'Css', 'Javascript', 'Html'],
+  linkToLiveVersion: "https://livev.com",
+  linkToSource: "https://github.com"
+},
+{
+  name:"Multi-post Stories <br>Gain + Glory", 
+  description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an un took a galley of type and scrambled it 1960s with the release", 
+  featuredImage: '/images/Snapshoot Portfolio-desk.png',
+  technologies: ['Ruby on Rails', 'Css', 'Javascript', 'Html'],
+  linkToLiveVersion: "https://livev.com",
+  linkToSource: "https://github.com"
+},
+{
+  name:"Multi-post Stories <br>Gain + Glory", 
+  description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an un took a galley of type and scrambled it 1960s with the release", 
+  featuredImage: '/images/Snapshoot Portfolio-desk.png',
+  technologies: ['Ruby on Rails', 'Css', 'Javascript', 'Html'],
+  linkToLiveVersion: "https://livev.com",
+  linkToSource: "https://github.com"
+}]
 
+cards = cards.forEach(function({name, technologies}) {
+  let card = document.createElement('article');
+  card.className = 'card';
 
-{/* <div class="cards">
-<article class="card">
-    <div class="sane">
+  card.innerHTML = `
+  <div class="sane">
+  </div>
+  <div class="content">
+    <h1>${name}</h1>
+    <ul class="category">
+              <li><a href="#">${technologies[0]}</a></li>
+              <li><a href="#">${technologies[1]}</a></li>
+              <li><a href="#">${technologies[2]}</a></li>
+              <li><a href="#">${technologies[3]}</a></li>
+    </ul>
+    <div class="open">
+      <button class="open-modal"><a href="#">See Project</a></button>
     </div>
-    <div class="content">
-        <h1>Multi-post Stories <br>Gain + Glory</h1>
-        <ul class="category">
-                <li><a href="#">Ruby on Rails</a></li>
-                <li><a href="#">Css</a></li>
-                <li><a href="#">Javascript</a></li>
-                <li><a href="#">Html</a></li>
-        </ul>
-         <div class="open"><button  data-modal-target="#modal"><a href="#">See Project</a></button></div>
-         
-    </div>
-</article>
-<article class="card">
-    <div class="sane"></div>
-    <div class="content">
-        <h1>Multi-post Stories <br>Gain + Glory</h1>
-        <ul class="category">
-                <li><a href="#">Ruby on Rails</a></li>
-                <li><a href="#">Css</a></li>
-                <li><a href="#">Javascript</a></li>
-                <li><a href="#">Html</a></li>
-        </ul>
-         <div class="open"><button  data-modal-target="#modal"><a href="#">See Project</a></button></div>
-    </div>
-</article>
-<article class="card">
-    <div class="sane">
-    </div>
-    <div class="content">
-        <h1>Multi-post Stories <br>Gain + Glory</h1>
-        <ul class="category">
-                <li><a href="#">Ruby on Rails</a></li>
-                <li><a href="#">Css</a></li>
-                <li><a href="#">Javascript</a></li>
-                <li><a href="#">Html</a></li>
-        </ul>
-         <div class="open"><button  data-modal-target="#modal"><a href="#">See Project</a></button></div>
-    </div>
-</article>
-<article class="card">
-    <div class="sane">
-    </div>
-    <div class="content">
-        <h1>Multi-post Stories <br>Gain + Glory</h1>
-        <ul class="category">
-                <li><a href="#">Ruby on Rails</a></li>
-                <li><a href="#">Css</a></li>
-                <li><a href="#">Javascript</a></li>
-                <li><a href="#">Html</a></li>
-        </ul>
-         <div class="open"><button  data-modal-target="#modal"><a href="#">See Project</a></button></div>
-    </div>
-</article>
-<article class="card">
-    <div class="sane">
-    </div>
-    <div class="content">
-        <h1>Multi-post Stories <br>Gain + Glory</h1>
-        <ul class="category">
-                <li><a href="#">Ruby on Rails</a></li>
-                <li><a href="#">Css</a></li>
-                <li><a href="#">Javascript</a></li>
-                <li><a href="#">Html</a></li>
-        </ul>
-         <div class="open"><button  data-modal-target="#modal"><a href="#">See Project</a></button></div>
-    </div>
-</article>
-<article class="card">
-    <div class="sane">
-    </div>
-    <div class="content">
-        <h1>Multi-post Stories <br>Gain + Glory</h1>
-        <ul class="category">
-                <li><a href="#">Ruby on Rails</a></li>
-                <li><a href="#">Css</a></li>
-                <li><a href="#">Javascript</a></li>
-                <li><a href="#">Html</a></li>
-        </ul>
-         <div class="open"><button  data-modal-target="#modal"><a href="#">See Project</a></button></div>
-    </div>
-</article>
-</div> */}
+  </div>
+  `
+  cardSection.appendChild(card);
+});
+let portfolio = document.querySelector('#portfolio');
+portfolio.insertBefore(cardSection, portfolio.lastChild);
+
+const openModalButtons = document.querySelectorAll('.open-modal')
+
+openModalButtons.forEach(button => {
+  button.onclick =  () => {
+    const modal = document.querySelector('#modal')
+    openModal(modal)
+  }
+})
