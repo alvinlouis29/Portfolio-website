@@ -296,11 +296,7 @@ h1 {
   align-items: center;
 }
 
-<<<<<<< HEAD
-.modal-header .close-butt {
-=======
 .modal-header .close-butt { 
->>>>>>> e7959188582efe1bda91d0e6249968dfef7edf79
   cursor: pointer;
   border: none;
   align-self: flex-end;
@@ -312,7 +308,6 @@ h1 {
 
 .portfolio_snapshot {
   width: 100%;
-  background-image: url(/images/Snapshoot\ Portfolio.png);
   background-repeat: no-repeat;
 }
 
@@ -373,6 +368,7 @@ h1 {
 
 .pop_button .see i {
   color: #fff;
+  margin: 0 0 0 14px;
 }
 
 .content {
@@ -723,7 +719,6 @@ input {
   .nav-menu li {
     padding: 0 20px;
     font-size: 20px;
-    background-color: #fff;
   }
 
   .nav-menu a {
@@ -865,15 +860,24 @@ input {
   }
 
   .modal {
-    width: 80%;
+    width: 60%;
     height: auto;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    overflow: auto;
+  }
+
+  .portfolio_snapshot img { 
+    width: 100%;
   }
 
   .modal_info {
     position: relative;
+  }
+
+  .title {
+    width: 80%;
   }
 
   .pop_button {
@@ -885,6 +889,10 @@ input {
   .content {
     background-color: white;
     border-radius: 10px;
+  }
+
+  .see {
+    padding: 12px;
   }
 
   .open {
