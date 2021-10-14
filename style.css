@@ -310,6 +310,10 @@ h1 {
   width: 100%;
 }
 
+.portfolio_snapshot img {
+  width: 100%;
+}
+
 #overlay {
   position: fixed;
   padding: 60px 0;
@@ -867,7 +871,7 @@ input {
     overflow: auto;
   }
 
-  .portfolio_snapshot img {
+  .portfolio_snapshot {
     width: 100%;
   }
 
@@ -876,7 +880,7 @@ input {
   }
 
   .title {
-    width: 80%;
+    width: 70%;
   }
 
   .pop_button {
